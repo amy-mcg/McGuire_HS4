@@ -1,0 +1,51 @@
+ Options()
+ {
+  BCAD=FALSE;
+  kIterations=10;
+ };
+ Plot()
+ {
+  Outlier_Model("RScaled", T(5), U(0,4), "r");
+  Outlier_Model("SSimple", N(0,2), 0, "s");
+  P_Sequence("M40-4_SL71",1,2,U(-2,2))
+  {
+   Boundary("Base - 100 cm")
+   {
+    z=100;
+   };
+   Prior("CI/Y-5","CI_Y5")
+   {
+    Outlier("RScaled", 0.05);
+    z=84.00;
+   };
+   R_Date("25540",21108,50)
+   {
+    Outlier("RScaled", 0.05);
+    z=50.25;
+   };
+   R_Date("18790",15466,35)
+   {
+    Outlier("RScaled", 0.05);
+    z=36.25;
+   };
+   R_Date("10825",9597,23)
+   {
+    Outlier("RScaled", 0.05);
+    z=20.25;
+   };
+   R_Date("6865",6025,18)
+   {
+    Outlier("RScaled", 0.05);
+    z=13.25;
+   };
+   R_Date("1935",2000,14)
+   {
+    Outlier("RScaled", 0.05);
+    z=4.75;
+   };
+   Boundary("Top - 0 cm")
+   {
+    z=0;
+   };
+  };
+ };

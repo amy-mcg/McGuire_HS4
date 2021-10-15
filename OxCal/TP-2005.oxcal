@@ -1,0 +1,351 @@
+ Options()
+ {
+  BCAD=FALSE;
+ };
+ Plot()
+ {
+  Outlier_Model("RScaled", T(5), U(0,4), "r");
+  Outlier_Model("SSimple", N(0,2), 0, "s");
+  P_Sequence("TP-2005 (Staff et al., 2019)", 100, 10, U(-2,2))
+  {
+   Boundary("14.80m")
+   {
+    z=14.800;a
+   };
+   R_F14C("OxA-29699", 0.00348, 0.00056)
+   {
+    Outlier("RScaled", 0.05);
+    z=14.545;
+   };
+   R_F14C("OxA-30766", 0.00344, 0.00053)
+   {
+    Outlier("RScaled", 0.05);
+    z=14.495;
+   };
+   R_F14C("OxA-29689", 0.00393, 0.00053)
+   {
+    Outlier("RScaled", 0.05);
+    z=14.445;
+   };
+   R_F14C("OxA-30765", 0.00431, 0.00061)
+   {
+    Outlier("RScaled", 0.05);
+    z=14.395;
+   };
+   R_F14C("OxA-30764", 0.00405, 0.00059)
+   {
+    Outlier("RScaled", 0.05);
+    z=14.345;
+   };
+   R_F14C("OxA-30763", 0.00481, 0.00060)
+   {
+    Outlier("RScaled", 0.05);
+    z=14.295;
+   };
+   R_F14C("OxA-30762", 0.00481, 0.00068)
+   {
+    Outlier("RScaled", 0.05);
+    z=14.245;
+   };
+   R_F14C("OxA-30761", 0.00562, 0.00078)
+   {
+    Outlier("RScaled", 0.05);
+    z=14.195;
+   };
+   R_F14C("OxA-30607", 0.00590, 0.00065)
+   {
+    Outlier("RScaled", 0.05);
+    z=14.145;
+   };
+   R_F14C("OxA-30606", 0.00495, 0.00057)
+   {
+    Outlier("RScaled", 0.05);
+    z=14.095;
+   };
+   R_F14C("OxA-30605", 0.00589, 0.00068)
+   {
+    Outlier("RScaled", 0.05);
+    z=14.045;
+   };
+   R_F14C("OxA-30604", 0.00554, 0.00062)
+   {
+    Outlier("RScaled", 0.05);
+    z=13.995;
+   };
+   R_F14C("OxA-30603", 0.00442, 0.00052)
+   {
+    Outlier("RScaled", 0.05);
+    z=13.945;
+   };
+   R_F14C("OxA-29374", 0.00460, 0.00046)
+   {
+    Outlier("RScaled", 0.05);
+    z=13.895;
+   };
+   R_F14C("OxA-29373", 0.00485, 0.00061)
+   {
+    Outlier("RScaled", 0.05);
+    z=13.845;
+   };
+   R_F14C("OxA-29372", 0.00531, 0.00060)
+   {
+    Outlier("RScaled", 0.05);
+    z=13.795;
+   };
+   R_F14C("OxA-29371", 0.00614, 0.00062)
+   {
+    Outlier("RScaled", 0.05);
+    z=13.745;
+   };
+   R_F14C("OxA-29370", 0.00638, 0.00051)
+   {
+    Outlier("RScaled", 0.05);
+    z=13.695;
+   };
+   R_Combine("OxA-29604/OxA-29679")
+   {
+    R_F14C("OxA-29604", 0.00741, 0.00053)
+    {
+     Outlier("SSimple", 0.05);
+    };
+    R_F14C("OxA-29679", 0.00629, 0.00101)
+    {
+     Outlier("SSimple", 0.05);
+    };
+    Outlier("RScaled", 0.05);
+    z=13.645;
+   };
+   R_F14C("OxA-29369", 0.00693, 0.00054)
+   {
+    Outlier("RScaled", 0.05);
+    z=13.595;
+   };
+   R_Combine("OxA-28875/OxA-28876")
+   {
+    R_F14C("OxA-28875", 0.00626, 0.00068)
+    {
+     Outlier("SSimple", 0.05);
+    };
+    R_F14C("OxA-28876", 0.00670, 0.00040)
+    {
+     Outlier("SSimple", 0.05);
+    };
+    Outlier("RScaled", 0.05);
+    z=13.545;
+   };
+   R_F14C("OxA-29368", 0.00694, 0.00052)
+   {
+    Outlier("RScaled", 0.05);
+    z=13.495;
+   };
+   R_F14C("OxA-29367", 0.00780, 0.00063)
+   {
+    Outlier("RScaled", 0.05);
+    z=13.445;
+   };
+   R_F14C("OxA-29366", 0.00796, 0.00053)
+   {
+    Outlier("RScaled", 0.05);
+    z=13.395;
+   };
+   R_F14C("OxA-29365", 0.00840, 0.00057)
+   {
+    Outlier("RScaled", 0.05);
+    z=13.345;
+   };
+   R_F14C("OxA-29364", 0.00954, 0.00060)
+   {
+    Outlier("RScaled", 0.05);
+    z=13.295;
+   };
+   R_F14C("OxA-29331", 0.01045, 0.00062)
+   {
+    Outlier("RScaled", 0.05);
+    z=13.235;
+   };
+   R_F14C("OxA-29330", 0.00969, 0.00058)
+   {
+    Outlier("RScaled", 0.05);
+    z=13.195;
+   };
+   R_F14C("OxA-29329", 0.01096, 0.00065)
+   {
+    Outlier("RScaled", 0.05);
+    z=13.135;
+   };
+   R_F14C("OxA-29328", 0.01092, 0.00059)
+   {
+    Outlier("RScaled", 0.05);
+    z=13.095;
+   };
+   R_Combine("OxA-28874/OxA-28847/OxA-29603")
+   {
+    R_F14C("OxA-28874", 0.01184, 0.00049)
+    {
+     Outlier("SSimple", 0.05);
+    };
+    R_F14C("OxA-28847", 0.00929, 0.00104)
+    {
+     Outlier("SSimple", 0.05);
+    };
+    R_F14C("OxA-29603", 0.01114, 0.00057)
+    {
+     Outlier("SSimple", 0.05);
+    };
+    Outlier("RScaled", 0.05);
+    z=13.045;
+   };
+   R_F14C("OxA-29327", 0.01149, 0.00063)
+   {
+    Outlier("RScaled", 0.05);
+    z=12.995;
+   };
+   R_F14C("OxA-29326", 0.01047, 0.00059)
+   {
+    Outlier("RScaled", 0.05);
+    z=12.945;
+   };
+   R_F14C("OxA-29325", 0.01080, 0.00061)
+   {
+    Outlier("RScaled", 0.05);
+    z=12.895;
+   };
+   R_F14C("OxA-29324", 0.01045, 0.00058)
+   {
+    Outlier("RScaled", 0.05);
+    z=12.845;
+   };
+   R_F14C("OxA-29323", 0.01274, 0.00057)
+   {
+    Outlier("RScaled", 0.05);
+    z=12.795;
+   };
+   R_F14C("OxA-29322", 0.01300, 0.00061)
+   {
+    Outlier("RScaled", 0.05);
+    z=12.755;
+   };
+   R_F14C("OxA-29321", 0.01365, 0.00058)
+   {
+    Outlier("RScaled", 0.05);
+    z=12.725;
+   };
+   R_Combine("OxA-29319/OxA-29320")
+   {
+    R_F14C("OxA-29319", 0.01384, 0.00059)
+    {
+     Outlier("SSimple", 0.05);
+    };
+    R_F14C("OxA-29320", 0.01472, 0.00062)
+    {
+     Outlier("SSimple", 0.05);
+    };
+    Outlier("RScaled", 0.05);
+    z=12.70;
+   };
+   R_F14C("OxA-29318", 0.01383, 0.00057)
+   {
+    Outlier("RScaled", 0.05);
+    z=12.679;
+   };
+   R_F14C("OxA-28873", 0.01384, 0.00071)
+   {
+    Outlier("RScaled", 0.05);
+    z=12.656;
+   };
+   C_date("CI/Y-5",39850,150)
+   {
+    Outlier("RScaled", 0.05);
+    z=12.64;
+   };
+   R_date("Beta-244642",32390,260)
+   {
+    Outlier("RScaled", 0.05);
+    z=11.85;
+   };
+   R_date("Beta-244641",28680,230)
+   {
+    Outlier("RScaled", 0.05);
+    z=11.25;
+   };
+   R_date("Beta-244640",27760,190)
+   {
+    Outlier("RScaled", 0.05);
+    z=10.6;
+   };
+   R_date("Beta-244639",25120,150)
+   {
+    Outlier("RScaled", 0.05);
+    z=9.85;
+   };
+   C_date("Y-3",29059,356)
+   {
+    Outlier("RScaled", 0.05);
+    z=9.7;
+   };
+   R_date("Beta-244638",24310,160)
+   {
+    Outlier("RScaled", 0.05);
+    z=9.3;
+   };
+   R_date("POZ-16295",23330,150)
+   {
+    Outlier("RScaled", 0.05);
+    z=8.86;
+   };
+   R_date("Beta-244637", 20220,100)
+   {
+    Outlier("RScaled", 0.05);
+    z=8.2;
+   };
+   C_date("Y-2_Base",22024, 642)
+   {
+    Outlier("RScaled", 0.05);
+    z=7.61;
+   };
+   C_date("Y-2_Top",22023, 642)
+   {
+    Outlier("RScaled", 0.05);
+    z=7.46;
+   };
+   R_date("Beta-244655", 16560, 90)
+   {
+    Outlier("RScaled", 0.05);
+    z=7.18;
+   };
+   R_date("Beta-244654", 13570,70)
+   {
+    Outlier("RScaled", 0.05);
+    z=6.98;
+   };
+   R_date("L083U*OA1A", 9750,70)
+   {
+    Outlier("RScaled", 0.05);
+    z=6.15;
+   };
+   R_Date("E-1",7770,40)
+   {
+    Outlier("RScaled", 0.05);
+    z=5.075;
+   };
+   R_date("POZ-15894", 5790, 40)
+   {
+    Outlier("RScaled", 0.05);
+    z=3.41;
+   };
+   R_date("POZ-15891", 4200, 40)
+   {
+    Outlier("RScaled", 0.05);
+    z=1.79;
+   };
+   R_date("POZ-15890", 1950, 30)
+   {
+    Outlier("RScaled", 0.05);
+    z=0.76;
+   };
+   Boundary("Surface")
+   {
+    z=0.0;
+   };
+  };
+ };

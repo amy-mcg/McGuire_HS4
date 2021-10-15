@@ -1,0 +1,31 @@
+ Options()
+ {
+  BCAD=FALSE;
+  kIterations=10;
+ };
+ Plot()
+ {
+  Outlier_Model("RScaled", T(5), U(0,4), "r");
+  Outlier_Model("SSimple", N(0,2), 0, "s");
+  P_Sequence("M72/25-GC1 (Cullen et al., 2014)", 100, 10, U(-2,2))
+  {
+   Boundary("Base - 8m")
+   {
+    z=800;
+   };
+   Prior("CI/Y-5","CI_Y5")
+   {
+    Outlier("RScaled", 0.05);
+    z=721;
+   };
+   C_Date("Minoan",BC(1560),10)
+   {
+    Outlier("RScaled", 0.05);
+    z=22;
+   };
+   Boundary("Surface")
+   {
+    z=0;
+   };
+  };
+ };

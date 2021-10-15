@@ -1,0 +1,86 @@
+ Options()
+ {
+  BCAD=FALSE;
+  kIterations=10;
+ };
+ Plot()
+ {
+  Outlier_Model("RScaled", T(5), U(0,4), "r");
+  Outlier_Model("SSimple", N(0,2), 0, "s");
+  P_Sequence("I-08 (McGuire et al., this study)", 100, 10, U(-2,2))
+  {
+   Boundary("Base - 36.48 m")
+   {
+    z=35.00;
+   };
+   C_Date("PGT",45700,500)
+   {
+    Outlier("RScaled", 0.05);
+    z=31.68;
+   };
+   Prior("CI/Y-5","CI_Y5")
+   {
+    Outlier("RScaled", 0.05);
+    z=29.96;
+   };
+   R_Date("SUERC-26419",23028,168)
+   {
+    Outlier("RScaled", 0.05);
+    z=18.60;
+   };
+   R_Date("ETH-39795",19888,355)
+   {
+    Outlier("RScaled", 0.05);
+    z=17.08;
+   };
+   Date("I08_T16.07")
+   {
+    z=16.07;
+   };
+   Date("I08_T15.23")
+   {
+    z=15.23;
+   };
+   R_Date("ETH-39794",11387,194)
+   {
+    Outlier("RScaled", 0.05);
+    z=15.08;
+   };
+   R_Date("SUERC-26418",7091,38)
+   {
+    Outlier("RScaled", 0.05);
+    z=14.67;
+   };
+   R_Date("I08_T14.39",7770,40)
+   {
+    Outlier("RScaled", 0.05);
+    z=14.39;
+   };
+   R_Combine("I08_13.95")
+   {
+    R_Date("ETH-39792",6279,138);
+    {
+     Outlier("SSimple", 0.05);
+    };
+    R_Date("ETH-39793",6249,169);
+    {
+     Outlier("SSimple", 0.05);
+    };
+    R_Date("ETH-39791",6141,81);
+    {
+     Outlier("SSimple", 0.05);
+    };
+    Outlier("RScaled", 0.05);
+    z=13.95;
+   };
+   R_Date("ETH-39789",3260,118)
+   {
+    Outlier("RScaled", 0.05);
+    z=12.20;
+   };
+   Boundary("Surface")
+   {
+    z=10;
+   };
+  };
+ };

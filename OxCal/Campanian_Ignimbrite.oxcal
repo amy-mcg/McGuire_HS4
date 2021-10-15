@@ -1,0 +1,13 @@
+ Plot("Campanian Ignimbrite (Giaccio et al., 2017)")
+ {
+  R_Combine()
+  {
+   R_Date("CW1", 34232, 306);
+   R_Date("CW2", 34352, 313);
+   R_Date("CW3", 34362, 308);
+   R_Date("CW4", 34188, 307);
+   R_Date("CW5", 34244, 306);
+   R_Date("CW6", 34343, 312);
+   R_Date("CW7", 34183, 305);
+  };
+ };

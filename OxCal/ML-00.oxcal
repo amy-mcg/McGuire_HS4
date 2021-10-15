@@ -1,0 +1,106 @@
+ Options()
+ {
+  BCAD=FALSE;
+  kIterations=10;
+ };
+ Plot()
+ {
+  Outlier_Model("RScaled", T(5), U(0,4), "r");
+  Outlier_Model("SSimple", N(0,2), 0, "s");
+  P_Sequence("ML-00 (Margari, 2008; Hardiman, 2012)", 100, 10, U(-2,2))
+  {
+   Boundary("Base - 9 m")
+   {
+    z=9.00;
+   };
+   C_Date("TP-1450",43413,1383)
+   {
+    Outlier("RScaled", 0.05);
+    z=8.80;
+   };
+   R_Date("Beta-145630",42400,2720)
+   {
+    Outlier("RScaled", 0.05);
+    z=8.675;
+   };
+   R_Date("Beta-145631",37910,660)
+   {
+    Outlier("RScaled", 0.05);
+    z=7.7125;
+   };
+   R_Date("SUERC-3026",43259,5219)
+   {
+    Outlier("RScaled", 0.05);
+    z=7.4685;
+   };
+   R_Date("Beta-145632",38390,690)
+   {
+    Outlier("RScaled", 0.05);
+    z=6.9585;
+   };
+   R_Date("SUERC-3023",38879,3017)
+   {
+    Outlier("RScaled", 0.05);
+    z=6.582;
+   };
+   R_Date("SUERC-3022",42083,4506)
+   {
+    Outlier("RScaled", 0.05);
+    z=6.1685;
+   };
+   R_Date("SUERC-3020",34975,1848)
+   {
+    Outlier("RScaled", 0.05);
+    z=5.647;
+   };
+   Prior("CI/Y-5","CI_Y5")
+   {
+    Outlier("RScaled", 0.05);
+    z=5.63;
+   };
+   R_Date("Beta-147749",32750,330)
+   {
+    Outlier("RScaled", 0.05);
+    z=4.75;
+   };
+   R_Date("SUERC-5864", 31717, 1225)
+   {
+    Outlier("RScaled", 0.05);
+    z=4.6525;
+   };
+   R_Date("Beta-202262", 32150, 800)
+   {
+    Outlier("RScaled", 0.05);
+    z=4.26;
+   };
+   R_Date("SUERC-3019", 30762, 1085)
+   {
+    Outlier("RScaled", 0.05);
+    z=3.9565;
+   };
+   R_Date("SUERC-5862", 27167, 1085)
+   {
+    Outlier("RScaled", 0.05);
+    z=3.0755;
+   };
+   R_Date("Beta-147750", 24460, 150)
+   {
+    Outlier("RScaled", 0.05);
+    z=2.604;
+   };
+   R_Date("SUERC-5863", 23523, 428)
+   {
+    Outlier("RScaled", 0.05);
+    z=2.201;
+   };
+   C_Date("TP-978",29903.5,736.5)
+   {
+    Outlier("RScaled", 0.05);
+    z=2.07;
+   };
+   Boundary("Surface - 2 m")
+   {
+    z=2;
+   };
+  };
+ };
