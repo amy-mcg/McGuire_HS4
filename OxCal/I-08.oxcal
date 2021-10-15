@@ -7,7 +7,7 @@
  {
   Outlier_Model("RScaled", T(5), U(0,4), "r");
   Outlier_Model("SSimple", N(0,2), 0, "s");
-  P_Sequence("I-08 (McGuire et al., this study)", 100, 10, U(-2,2))
+  P_Sequence("I-08 (Jones et al., 2013; McGuire et al., 2021)", 100, 10, U(-2,2))
   {
    Boundary("Base - 36.48 m")
    {

@@ -7,7 +7,7 @@
  {
   Outlier_Model("RScaled", T(5), U(0,4), "r");
   Outlier_Model("SSimple", N(0,2), 0, "s");
-  P_Sequence("M72/25-GC1 (Cullen et al., 2014)", 100, 10, U(-2,2))
+  P_Sequence("M72/25-GC1 (Nowaczyk et al., 2012; Cullen et al., 2014)", 100, 10, U(-2,2))
   {
    Boundary("Base - 8m")
    {
