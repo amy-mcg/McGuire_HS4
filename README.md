@@ -1,5 +1,5 @@
 # Ioannina_HS4
-Data files associated with the McGuire et al. (in prep) paper "Campanian Ignimbrite (Y-5) tephra reveals asynchronous vegetation responses to millennial-scale climate change".
+Data files associated with the McGuire et al. (in review) paper "Campanian Ignimbrite (Y-5) tephra reveals asynchronous vegetation responses to millennial-scale climate change".
 
 ## OxCal
 Contains the OxCal (https://c14.arch.ox.ac.uk/oxcal.html) code used to develop the age-depth models published in the paper, developed in OxCal Version 4.4 (Bronk Ramsey, 2009a) and using the IntCal20 calibration curve (Reimer et al., 2020).
@@ -20,7 +20,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Amy McGuire - [@amymcg](https://twitter.com/amymcg) - a.mcguire@leeds.ac.uk
 
-Project Link: [https://github.com/amy-mcg/Ioannina_HS4](https://github.com/amy-mcg/Ioannina_HS4)
+Project Link: [https://github.com/amy-mcg/McGuire_HS4](https://github.com/amy-mcg/McGuire_HS4)
 
 ## References
 
