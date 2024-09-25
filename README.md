@@ -1,5 +1,7 @@
-# Ioannina_HS4
-Data files associated with the McGuire et al. (in review) paper "Campanian Ignimbrite (Y-5) tephra reveals asynchronous vegetation responses to millennial-scale climate change".
+# McGuire_HS4
+Data files and associated code developed for McGuire et al. (2024).
+
+Citation: McGuire, A.M., Lane, C.S., Roucoux, K.H., Lawson, I.T., Koutsodendris, A., Pross, J., Margari, V., and Tzedakis, P.C. (2024), Campanian Ignimbrite tephra reveals asynchronous vegetation responses to abrupt climate change in the eastern Mediterranean region. Quaternary Sci. Rev. https://doi.org/10.1016/j.quascirev.2024.108714.
 
 ## OxCal
 Contains the OxCal (https://c14.arch.ox.ac.uk/oxcal.html) code used to develop the age-depth models published in the paper, developed in OxCal Version 4.4 (Bronk Ramsey, 2009a) and using the IntCal20 calibration curve (Reimer et al., 2020).
